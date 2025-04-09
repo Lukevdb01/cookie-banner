@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+
+<body onload="check_cookie()">
+    <main>
+        <article>
+            <h1>Hello, World</h1>
+            <p>This is just a example website for testing purposes</p>
+        </article>
+    </main>
+    <div id="cookiePopup" class="hide">
+        <img src="public/cookie.svg" alt="cookie">
+        <p>
+            Our website uses cookies to provide your browsing experience and
+            relevant information. Before continuing to use our website, you agree &
+            accept of our <a href="pages/privacy.html">Cookie Policy & Privacy.</a>
+        </p>
+        <div class="button-box">
+            <button id="rejectCookie" onclick="set_cookie('test_website_cookie=reject')" class="red">Reject</button>
+            <button id="acceptCookie" onclick="set_cookie('test_website_cookie=allow')" class="blue">Accept</button>
+        </div>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
